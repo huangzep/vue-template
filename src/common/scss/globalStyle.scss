@@ -1,0 +1,108 @@
+@import './normalize';
+@import './mixin';
+@import './toast';
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #c2c2c2;
+}
+
+
+
+
+/*修改占位符颜色*/
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999;
+  font-size: 80%;
+}
+
+html {
+  background: #F5F5F5;
+  box-sizing: border-box;
+  font-family: PingFangSC-Regular;
+  color: #3A3633;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+a:-webkit-any-link {
+  color: inherit;
+}
+
+
+
+
+/* icon&label */
+
+.theme-icon {
+  display: inline-block;
+  width: 0.266667rem;
+  height: 0.266667rem;
+  margin-right: 0.2rem;
+}
+
+.text-bg-label {
+  display: inline-block;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  background: #F4F4F4;
+  border-radius: 0.066667rem;
+  margin-left: 0.533333rem;
+  @include font-dpr(10px);
+  padding: 0 0.106667rem;
+}
+
+.course-label {
+  width: 0.413333rem;
+  margin-right: 0.133333rem;
+}
+
+.common-confirm-text-main {
+  @include font-dpr(18px);
+  color: #383838;
+}
+
+.common-confirm-text-less {
+  @include font-dpr(15px);
+  color: #999;
+}
+
+.noData-icon {
+  width: 3.48rem;
+  height: 2.946667rem;
+  background-size: cover!important;
+  margin: 0 auto;
+}
+
+.noData-text {
+  @include font-dpr(14px);
+  color: #666;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
+#nprogress .bar {
+  height: 0.08rem!important;
+}
+
+.noData-container {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}

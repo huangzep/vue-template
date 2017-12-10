@@ -1,0 +1,12 @@
+.vux-toast {
+  .weui-toast {
+    background: #FF606E;
+    width: 200px;
+    line-height: 100px;
+    border-radius: 5px;
+    p {
+      @include font-dpr(15px);
+      padding: 0;
+    }
+  }
+}

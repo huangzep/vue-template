@@ -1,0 +1,26 @@
+@mixin font-dpr($font-size) {
+  font-size: $font-size;
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+}
+
+@mixin arrow-style($size: 0.266667rem, $border-size: 0.026667rem, $color: #999, $rotate: -45deg) {
+  &:after {
+    content: '';
+    display: inline-block;
+    width: $size;
+    height: $size;
+    border-right: $border-size solid;
+    border-bottom: $border-size solid;
+    border-color: $color;
+    transform: rotate($rotate);
+  }
+}
+
+@mixin change-color($color: black) {
+  color: $color;
+}
